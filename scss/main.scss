@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import "config";
+@import "header";
+@import "hero";
+@import "media";
+@import 'animations';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}// body
+
+button, .button {
+    color: $white;
+    padding: 10px 25px;
+    background: $blue;
+    border: 1px solid $blue;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        background: $white;
+        color: $blue;
+        border-color: $white;
+    }// :hover
+    &.secondary {
+        background: transparent;
+        border-color: $white_light;
+        color: $white_light;
+        &:hover {
+            background-color: $blue;
+            border-color: $blue
+        }// :hover
+    }// .secondary
+}// button, .button

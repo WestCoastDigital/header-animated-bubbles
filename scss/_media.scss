@@ -1,0 +1,32 @@
+@media screen and (max-width: 720px) {
+    .hero {
+        .navbar {
+            margin: 0;
+            padding: 0 50px;
+            width: 100vw;
+        }// .navbar
+        .content {
+            h1 {
+                font-size: 60px;
+                line-height: 60px;
+            }// h1
+        }// .content
+        .bubble {
+            &.x8 {
+                left: 15%;
+            }
+        }
+    }// .hero
+    .sidebar {
+        background: none;
+        .menu-bars{
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        #menu-icons {
+            display: none;
+        }// #menu-icons
+    }// .sidebar
+}
